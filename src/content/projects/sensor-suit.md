@@ -15,3 +15,9 @@ This project involves creating a wearable sensor suit that can detect and classi
 - 12 motion sensors integrated via SPI
 - Real-time data transmission to smartphone
 - Activity classification using advanced algorithms
+---
+title: "Sensor suit for exercise detection"
+date: 2015-02-01
+description: "A suit with 12 motion sensors connected using SPI forwards data to smartphone, where an algorithms distinguishes between different types of activities. [Arduino, AVR, feature extraction, anomaly detection]"
+tags: ["Arduino", "AVR", "feature extraction", "anomaly detection"]
+---
