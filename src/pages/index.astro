@@ -3,8 +3,6 @@ import { getCollection } from 'astro:content';
 const blogPosts = await getCollection('blog');
 const projectsPosts = await getCollection('projects');
 projectsPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()); // Sort projects by date
-
-console.log("Projects Posts:", JSON.stringify(projectsPosts, null, 2)); // Detailed console log
 ---
 
 <html lang="en">
