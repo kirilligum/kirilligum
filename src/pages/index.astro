@@ -7,10 +7,41 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta name="description" content="A personal homepage in the style of brutalism and nature." />
+		<title>Your Name - Homepage</title>
+		<style>
+			body {
+				font-family: monospace;
+				background-color: #f0f0f0; /* Light gray background */
+				color: #222; /* Dark text for contrast */
+				margin: 2rem;
+			}
+			h1, h2, h3 {
+				font-weight: bold;
+				line-height: 1.1;
+				margin-bottom: 0.5rem;
+			}
+			section {
+				margin-bottom: 2rem;
+				padding: 1rem;
+				border: 2px solid #222; /* Basic border for sections */
+			}
+			a {
+				color: #007bff; /* Example link color */
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<h1>Your Name</h1>
+		</header>
+		<section id="about"><h2>About Me</h2><p>Write a brief introduction about yourself here.</p></section>
+		<section id="blog"><h2>Blog</h2><p>Links to your blog posts will go here.</p></section>
+		<section id="projects"><h2>Projects</h2><p>Showcase your projects here.</p></section>
+		<section id="resume"><h2>Resume</h2><p><a href="#">Link to your resume</a></p></section>
 	</body>
 </html>
