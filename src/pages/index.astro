@@ -1,5 +1,6 @@
 ---
-
+import { getCollection } from 'astro:content';
+const blogPosts = await getCollection('blog');
 ---
 
 <html lang="en">
@@ -47,7 +48,16 @@
 				<a href="https://x.com/kirill_igum">X (Twitter)</a> | <a href="https://github.com/kirilligum/">GitHub</a> | <a href="https://www.linkedin.com/in/kirilligum/">LinkedIn</a>
 			</p>
 		</section>
-		<section id="blog"><h2>Blog</h2><p>Links to your blog posts will go here.</p></section>
+		<section id="blog">
+			<h2>Blog</h2>
+			<ul>
+				{blogPosts.map((post) => (
+					<li>
+						<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+					</li>
+				))}
+			</ul>
+		</section>
 		<section id="projects"><h2>Projects</h2><p>Showcase your projects here.</p></section>
 		<section id="resume"><h2>Resume</h2><p><a href="#">Link to your resume</a></p></section>
 	</body>

@@ -1,0 +1,67 @@
+---
+import { type CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog');
+  return blogPosts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Blog post page" />
+		<title>{post.data.title}</title>
+        <style>
+			body {
+				font-family: monospace;
+				background-color: #f0f0f0; /* Light gray background */
+				color: #222; /* Dark text for contrast */
+				margin: 2rem;
+			}
+			h1, h2, h3 {
+				font-weight: bold;
+				line-height: 1.1;
+				margin-bottom: 0.5rem;
+			}
+			section {
+				margin-bottom: 2rem;
+				padding: 1rem;
+				border: 2px solid #222; /* Basic border for sections */
+			}
+			a {
+				color: #007bff; /* Example link color */
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+            article {
+                padding: 1rem;
+            }
+        </style>
+	</head>
+	<body>
+		<header>
+			<h1>Kirill Igumenshchev</h1>
+		</header>
+		<section>
+            <article>
+                <h2>{post.data.title}</h2>
+                <Content />
+            </article>
+ 		</section>
+ 	</body>
+ </html>
