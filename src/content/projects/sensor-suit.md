@@ -3,6 +3,7 @@ title: "Sensor Suit for Exercise Detection"
 date: 2015-02-01
 description: "A suit with 12 motion sensors connected using SPI forwards data to smartphone, where algorithms distinguish between different types of activities."
 tags: ["Arduino", "AVR", "feature extraction", "anomaly detection"]
+skills: ["Embedded Systems", "C++", "Machine Learning"]
 liveLink: "https://example.com/sensor-suit"
 githubLink: "https://github.com/kirilligum/sensor-suit"
 ---

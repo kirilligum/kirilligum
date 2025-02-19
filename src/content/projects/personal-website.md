@@ -3,6 +3,7 @@ title: "Personal Portfolio Website"
 date: 2024-02-19
 description: "A modern, brutalist-inspired personal website built with Astro, showcasing projects, blog posts, and personal information."
 tags: ["Astro", "TypeScript", "Web Development", "Static Site"]
+skills: ["Web Development", "Frontend", "Static Site Generation", "TypeScript"]
 liveLink: "https://kirilligum.com"
 githubLink: "https://github.com/kirilligum/personal-website"
 ---

@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+const projectsPosts = await getCollection('projects');
+projectsPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()); // Sort projects by date
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Projects page" />
+		<title>Projects - Kirill Igumenshchev</title>
+        <style>
+			body {
+				font-family: monospace;
+				background-color: #f0f0f0;
+				color: #222;
+				margin: 2rem;
+			}
+			h1, h2, h3 {
+				font-weight: bold;
+				line-height: 1.1;
+				margin-bottom: 0.5rem;
+			}
+			section {
+				margin-bottom: 2rem;
+				padding: 1rem;
+				border: 2px solid #222;
+			}
+			a {
+				color: #007bff;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+            article {
+                padding: 1rem;
+            }
+        </style>
+	</head>
+	<body>
+		<header>
+			<h1>Projects</h1>
+		</header>
+		<section>
+            <article>
+                <ul>
+                    {projectsPosts.map((post) => (
+                        <li key={post.slug}>
+                            <h3>{post.data.title}</h3>
+                            <p>{post.data.description.split(' ').slice(0, 100).join(' ')}... <a href="#">Read more</a></p>
+                            {post.data.skills && post.data.skills.length > 0 && (
+                                <p>Skills: {post.data.skills.join(', ')}</p>
+                            )}
+                            {post.data.liveLink && <p><a href={post.data.liveLink} target="_blank">Live Demo</a></p>}
+                            {post.data.githubLink && <p><a href={post.data.githubLink} target="_blank">GitHub</a></p>}
+                            {post.data.tags && post.data.tags.length > 0 && <p>Tags: {post.data.tags.join(', ')}</p>}
+                            <p style="font-size: 0.8em; color: #777;">Date: {post.data.date.toLocaleDateString()}</p>
+                            <hr/>
+                        </li>
+                    ))}
+                </ul>
+            </article>
+ 		</section>
+ 	</body>
+ </html>

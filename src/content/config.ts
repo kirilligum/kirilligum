@@ -14,6 +14,7 @@ const projectsCollection = defineCollection({
         date: z.date(),
         description: z.string(),
         tags: z.array(z.string()).optional(),
+        skills: z.array(z.string()).optional(),
         liveLink: z.string().optional(),
         githubLink: z.string().optional(),
     }),

@@ -3,6 +3,7 @@ title: "Command Line Tool for System Statistics"
 date: 2022-06-15
 description: "A cross-platform CLI tool that provides detailed system performance and resource utilization statistics."
 tags: ["Python", "System Monitoring", "Performance", "CLI"]
+skills: ["Python", "System Performance", "CLI Development"]
 githubLink: "https://github.com/kirilligum/system-stats-cli"
 ---
 

@@ -63,20 +63,8 @@ console.log("Projects Posts:", JSON.stringify(projectsPosts, null, 2)); // Detai
 			</ul>
 		</section>
 		<section id="projects">
-			<h2>Projects</h2>
-			<ul>
-				{projectsPosts.map((post) => (
-					<li>
-						<h3>{post.data.title}</h3>
-						<p>{post.data.description}</p>
-						{post.data.liveLink && <p><a href={post.data.liveLink} target="_blank">Live Demo</a></p>}
-						{post.data.githubLink && <p><a href={post.data.githubLink} target="_blank">GitHub</a></p>}
-						{post.data.tags && post.data.tags.length > 0 && <p>Tags: {post.data.tags.join(', ')}</p>}
-						<p style="font-size: 0.8em; color: #777;">Date: {post.data.date.toLocaleDateString()}</p>
-						<hr/>
-					</li>
-				))}
-			</ul>
+			<h2>Projects</h2> 
+			<p><a href="/projects">View all projects</a></p>
 		</section>
 		<section id="resume"><h2>Resume</h2><p><a href="#">Link to your resume</a></p></section>
 	</body>
