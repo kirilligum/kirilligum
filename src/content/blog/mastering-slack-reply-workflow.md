@@ -135,6 +135,12 @@ This workaround is for users transitioning from other platforms.
 | **Onboarding**| Steeper learning curve due to unique threading model.                            | Intuitive, aligns with familiar social chat apps.                              |
 | **Mindset**  | Asynchronous work hub. Channels are inboxes; threads are tasks.                  | Real-time social space. Channels are continuous streams of conversation.     |
 
+<style>
+  main table tr:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.07);
+  }
+</style>
+
 ### Visualizing Complex Conversation Flows
 
 The structural differences between Slack and Discord are most apparent in complex conversations.
