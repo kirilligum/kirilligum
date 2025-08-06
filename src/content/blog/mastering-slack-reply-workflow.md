@@ -25,6 +25,9 @@ Description: A screenshot of a Slack message with the hover menu visible, highli
 *   **Centralize with the "Threads" View:** In your sidebar, you'll find a "Threads" view. This is a powerful, often overlooked feature that aggregates all conversations you're a part of into a single inbox, making it easy to track replies.
 *   **Follow Without Replying:** To monitor a conversation without contributing, click the three-dot menu on the parent message and select "Follow thread." This will add the thread to your "Threads" view without sending a notification to the channel.
 
+#### Avoid the "Edit-to-Reply" Anti-Pattern
+A common mistake is replying in the main channel and then editing the message to add an `@mention` to the intended recipient. This does **not** create a thread, fails to properly notify thread followers, and clutters the main channel. Always start a proper thread for replies.
+
 ### Transitional Workflow: Simulating Replies with Links
 
 For users accustomed to a direct reply-style workflow or for temporary users not wishing to learn Slack's threading model, simulating replies with message links is a viable, albeit manual, alternative.
@@ -75,7 +78,7 @@ When a thread branches, one branch can become a new, separate thread in the main
 2.  Check the "Also send to #channel" box below the input field.
 3.  Send the message.
 
-This posts your reply in the main channel, creating a new parent message for a new thread.
+This posts your reply in the main channel, creating a new parent message for a new thread. Be aware that this action notifies **everyone** in the channel, not just thread participants, so use it intentionally to bring a thread update to the entire group's attention.
 
 **Keyboard Navigation:** After typing your message, press `Shift+Tab` to focus the checkbox, then `Spacebar` to toggle it. Note that Slack often remembers the state of this checkbox for subsequent replies in the same session, so be mindful of its status.
 
