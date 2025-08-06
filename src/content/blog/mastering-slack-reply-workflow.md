@@ -150,6 +150,17 @@ Use these when a sub-topic becomes a self-contained project or requires a smalle
 *   **Group DM:** For focused discussions with 2-4 people. Copy the original thread link for context. Announce the move in the original thread: "Moving this to a DM with @personA."
 *   **Temporary Private Channel:** For larger workstreams involving multiple people and files. Create a new channel (e.g., `#temp-project-feature`), post the original thread link for context, and announce the move in the original thread.
 
+### Power User Tips for Discord Converts
+
+If you're comfortable with Discord's power features, here are some equivalent concepts and new tools in Slack to master.
+
+*   **Master the Quick Switcher (`Ctrl+K` or `Cmd+K`):** Just like in Discord, this is the fastest way to jump between channels, DMs, and workspaces.
+*   **Customize Notifications with Keywords:** Beyond per-channel settings, you can configure Slack to notify you whenever specific keywords (like a project codename) are mentioned anywhere.
+*   **Embrace Asynchronous Status:** While Discord has rich presence, Slack's status is geared toward async work. Use "Do Not Disturb" (DND) schedules to protect focus time. The culture is less about being "online" and more about being productive.
+*   **Use Huddles for Quick Syncs:** Slack Huddles are for impromptu voice chats, not persistent voice channels. They are for quick collaboration and end when the last person leaves.
+*   **Leverage Advanced Search Modifiers:** Learn modifiers like `in:#channel-name`, `from:@username`, `has:link`, and date filters (`before:`, `after:`) to pinpoint information across your entire workspace history.
+*   **Explore Slash Commands & Integrations:** Slack's version of bots are its deep integrations. Start with built-in commands like `/remind` and explore the app directory for tools like Google Drive or Jira.
+
 ### Workflow Comparison: Native Threads vs. Manual Links
 
 The choice between Slack's native threading and a manual link-based reply system is a choice between two different design philosophies.
