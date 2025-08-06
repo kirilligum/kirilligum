@@ -7,6 +7,10 @@ import rehypeMermaid from 'rehype-mermaid';
 export default defineConfig({
   integrations: [mdx()],
   markdown: {
+    syntaxHighlight: {
+      type: 'shiki',
+      excludeLangs: ['mermaid'],
+    },
     rehypePlugins: [
       [
         rehypeMermaid,
