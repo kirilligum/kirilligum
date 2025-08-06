@@ -203,3 +203,34 @@ The usability friction of Slack's threading model is explained by established HC
 *   **High Initial Cost:** The threading model requires more upfront mental effort and has a higher interaction cost for new users compared to the inefficient but familiar link-pasting workflow.
 *   **Low Long-Term Cost:** For experienced users, threads lower the cognitive load required to track asynchronous conversations. The system provides a strong "information scent," allowing users to efficiently find relevant discussions without parsing a chaotic channel history.
 *   **Efficiency at Scale:** Once learned, the native workflow (e.g., the `T` shortcut) has a lower interaction cost than any manual workaround, making it more scalable for team collaboration.
+
+---
+
+### Share on Twitter
+
+Here are some suggested posts to share this article.
+
+**Main Tweet:**
+```text
+New to Slack and find its reply system confusing? You're not alone.
+
+I wrote a deep-dive into Slack's threading model vs. the linear replies of Discord/Telegram, covering workflows, power-user tips, and the design philosophy behind it.
+
+[link to post]
+
+#Slack #Productivity
+```
+
+**Reply 1 (Insight):**
+```text
+The core trade-off: Slack optimizes for a clean main channel (high signal-to-noise) at the cost of a steeper learning curve. Other apps optimize for real-time flow.
+
+Understanding this is key to mastering Slack. #UI #UX #Design
+```
+
+**Reply 2 (Practical Tips):**
+```text
+My guide includes a full comparison table, diagrams of complex conversation flows, and a manual link-based reply workflow for those transitioning.
+
+Plus, advanced tips like using the Quick Switcher (Ctrl+K) and search modifiers. #Tech #Workflow
+```
