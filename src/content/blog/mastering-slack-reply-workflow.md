@@ -1,7 +1,7 @@
 ---
 title: "Mastering Slack's Reply Workflow"
 description: "A concise guide for technical users on efficiently handling replies and branching conversations in Slack."
-date: "2024-08-01"
+date: 2024-08-01
 tags: ["slack", "workflow", "productivity"]
 ---
 
