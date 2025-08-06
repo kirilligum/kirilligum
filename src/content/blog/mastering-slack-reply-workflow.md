@@ -4,7 +4,9 @@ description: "A concise guide for technical users on efficiently handling replie
 pubDate: "2024-08-01"
 ---
 
-Slack's reply model differs from other chat applications. It prioritizes de-cluttering main channels for asynchronous work over the immediate, linear flow of apps like Discord or Telegram. Replies are intentionally sandboxed into threads. This workflow is unique to Slack, so users accustomed to other platforms may need time to adapt.
+My first experience with Slack was one of frustration, a sentiment I've found is common among new users. My main criticism was simple: compared to Discord, Telegram, or WhatsApp, how do you reply to a message? The lack of an obvious reply button led me to a clumsy, multi-step workaround of copying a message link and pasting it into the chat. It felt inefficient and highlighted a key usability challenge.
+
+This initial friction stems from a core design philosophy difference. Slack prioritizes de-cluttering main channels for asynchronous work over the immediate, linear flow of other chat apps. Replies are intentionally sandboxed into threads. This workflow is unique to Slack, so users accustomed to other platforms may need time to adapt.
 
 ### Standard Reply Workflow
 
@@ -121,4 +123,4 @@ There are no known academic studies directly comparing these two specific Slack 
 
 Don Norman, in *The Design of Everyday Things*, explains that users build "mental models" of how systems should work. The link-based method feels easier initially because it aligns with the common mental model of linear chat. Slack's native threading violates this model, causing initial confusion.
 
-However, Slack's design is a deliberate trade-off intended to reduce long-term cognitive load in a professional, asynchronous environment. By organizing conversations into distinct threads, the system provides a strong "information scent" (a concept from Information Foraging Theory by Pirolli and Card), allowing users to efficiently find and engage with relevant information without parsing an entire chaotic channel history. While the link-based method is a valid bridge for temporary users, mastering the native workflow is more efficient and scalable for long-term team collaboration.
+However, Slack's design is a deliberate trade-off. It increases the initial *interaction cost*—the total effort, including clicks, mouse navigation, and mental processing, required to perform an action. A workflow that takes more time and steps, like manually copying links, has a high interaction cost and feels inefficient. While this initial complexity violates the design principle of making frequent actions simple, Slack's goal is to reduce long-term cognitive load in a professional, asynchronous environment. By organizing conversations into distinct threads, the system provides a strong "information scent" (a concept from Information Foraging Theory by Pirolli and Card), allowing users to efficiently find and engage with relevant information without parsing an entire chaotic channel history. Once the native workflow is learned (e.g., the `T` shortcut), its interaction cost becomes lower than the manual workaround, making it more efficient and scalable for long-term team collaboration.
