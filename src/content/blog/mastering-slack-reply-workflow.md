@@ -8,15 +8,19 @@ My first experience with Slack was one of frustration, a sentiment I've found is
 
 This initial friction stems from a core design philosophy difference. Slack prioritizes de-cluttering main channels for asynchronous work over the immediate, linear flow of other chat apps. Replies are intentionally sandboxed into threads. This workflow is unique to Slack, so users accustomed to other platforms may need time to adapt.
 
-### Workflow Comparison by User Objective
+### Workflow Comparison
 
-| User Objective                                  | Slack Workflow & Outcome                                                                               | Discord / Telegram / Signal Workflow & Outcome                                                                            |
-| :---------------------------------------------- | :----------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
-| **Reply to a message**                          | Press `T` or hover to "Reply in thread". The reply is sandboxed into a separate thread pane.             | Right-click or use a dedicated button to "Reply". The reply is posted in the main channel, quoting the original message.    |
-| **Track a specific conversation**                 | Automatic. All replies are grouped into a thread. Track all followed threads in the dedicated "Threads" view. | Manual. Must scroll through the main channel to find replies or rely on mentions. Conversation context is easily lost. |
-| **Scan the main channel for new topics**        | Easy. The main channel only shows top-level "parent" messages, keeping it clean and scannable.             | Difficult. The main channel is a single, linear feed of all messages and replies, requiring scrolling to find new topics. |
-| **Alert everyone to an important reply**        | Reply in a thread and check "Also send to #channel". This promotes the reply to the main channel.        | All replies are already in the main channel. Use `@everyone` or `@here` for broad notifications.                          |
-| **Reply to an earlier point in a conversation** | Within a thread, use blockquotes (`>`) to reference a specific earlier message for context.              | Reply directly to the earlier message. The new reply appears at the bottom of the channel with a clickable link to the original. |
+| Objective    | Slack                                                                            | Discord                                                                      |
+| :----------- | :------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
+| **Reply**    | Press `T` or hover to "Reply in thread". Sandboxes reply in a separate pane.       | Click "Reply". Posts a quoted reply in the main channel.                     |
+| **Track**    | Automatic. Threads group conversations. Centralized in the "Threads" view.       | Manual. Requires scrolling or searching for mentions.                        |
+| **Scan**     | Easy. Main channel shows only top-level posts.                                   | Difficult. Main channel is a mix of posts and all replies.                   |
+| **Find**     | Centralized "Threads" view shows all your conversations.                         | Decentralized. Requires searching for `@mentions` across channels.           |
+| **Alert**    | Use "Also send to #channel" to notify everyone of a key reply.                   | Use `@everyone` or `@here`.                                                  |
+| **Reference**| Use blockquotes (`>`) for context in-thread or paste a message link.             | Reply to the old message; a link back is auto-added.                         |
+| **Branch**   | Formal mechanisms: Fork a thread or create a new channel.                        | No formal mechanism. Must create a new channel.                              |
+| **Noise**    | Low by default. Notifications are thread-scoped, reducing interruptions.         | High by default. Notifications are channel-scoped.                           |
+| **Onboarding**| Steeper learning curve due to unique threading model.                            | Intuitive, aligns with familiar social chat apps.                              |
 
 ### Standard Reply Workflow
 
