@@ -35,21 +35,21 @@ Slack contains conversations in threads. Threads can be forked to new parent mes
 ```mermaid
 graph TD
     subgraph #main-channel
-        A[Message A: "Plan for Project"] --> B{Thread 1};
-        D[Message D: Forked from T1.2];
+        A["Message A (Project Plan)"] --> B{Thread 1};
+        D["Message D (Forked from T1.2)"];
         D --> E{Thread 2};
     end
 
-    subgraph Thread 1 [Thread on Message A]
-        B -- "Reply" --> T1_1[T1.1: "What about Topic X?"];
-        T1_1 -- "Reply" --> T1_2[T1.2: "Good point. Let's fork this."];
+    subgraph "Thread 1 (on Message A)"
+        B -- "Reply" --> T1_1["T1.1: What about Topic X?"];
+        T1_1 -- "Reply" --> T1_2["T1.2: Good point. Let's fork."];
         T1_2 -- "Also send to #channel" --> D;
-        T1_1 -- "Reply" --> T1_3[T1.3: "Let's take this offline."];
-        T1_3 -- "Move to DM" --> G_DM[DM: Topic X Discussion];
+        T1_1 -- "Reply" --> T1_3["T1.3: Let's take this offline."];
+        T1_3 -- "Move to DM" --> G_DM["DM: Topic X Discussion"];
     end
 
-    subgraph Thread 2 [Thread on Message D]
-       E -- "Reply" --> T2_1[T2.1: "Continuing Topic X discussion..."];
+    subgraph "Thread 2 (on Message D)"
+       E -- "Reply" --> T2_1["T2.1: Continuing Topic X..."];
     end
 
     style D fill:#f9f,stroke:#333,stroke-width:2px
@@ -62,17 +62,17 @@ Discord processes all messages in a single, chronological flow. Branching a topi
 ```mermaid
 graph TD
     subgraph #main-channel
-        A["Msg A: Plan for Project"];
-        A --> B["Msg B (reply to A): What about Topic X?"];
-        B --> C["Msg C (reply to A): What about Topic Y?"];
-        C --> D["Msg D (reply to B): I agree on Topic X."];
-        D --> E["Msg E (reply to C): Topic Y is blocked."];
-        E --> F["Msg F: Let's make a new channel for Topic X."];
+        A["Msg A (Project Plan)"];
+        A --> B["Msg B (Reply to A on Topic X)"];
+        B --> C["Msg C (Reply to A on Topic Y)"];
+        C --> D["Msg D (Reply to B on Topic X)"];
+        D --> E["Msg E (Reply to C on Topic Y)"];
+        E --> F["Msg F (Suggest new channel for Topic X)"];
         F --> G[#project-topic-x];
     end
 
     subgraph #project-topic-x
-        G -- "Discussion continues" --> H["Msg H: OK, Topic X discussion here..."];
+        G -- "Discussion continues" --> H["Msg H (Topic X discussion continues)"];
     end
 
     style F fill:#f9f,stroke:#333,stroke-width:2px
