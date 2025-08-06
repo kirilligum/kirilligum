@@ -10,7 +10,7 @@ This initial friction stems from a core design philosophy difference. Slack prio
 
 ### Workflow Comparison
 
-| Objective    | Slack                                                                            | Discord                                                                      |
+| Point        | Slack                                                                            | Discord                                                                      |
 | :----------- | :------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
 | **Reply**    | Press `T` or hover to "Reply in thread". Sandboxes reply in a separate pane.       | Click "Reply". Posts a quoted reply in the main channel.                     |
 | **Track**    | Automatic. Threads group conversations. Centralized in the "Threads" view.       | Manual. Requires scrolling or searching for mentions.                        |
@@ -23,6 +23,7 @@ This initial friction stems from a core design philosophy difference. Slack prio
 | **Switch**   | Efficient. The "Threads" view acts as an inbox for all active discussions.       | Inefficient. Requires manually navigating channels and scrolling.            |
 | **Noise**    | Low by default. Notifications are thread-scoped, reducing interruptions.         | High by default. Notifications are channel-scoped.                           |
 | **Onboarding**| Steeper learning curve due to unique threading model.                            | Intuitive, aligns with familiar social chat apps.                              |
+| **Mindset**  | Asynchronous work hub. Channels are inboxes; threads are tasks.                  | Real-time social space. Channels are continuous streams of conversation.     |
 
 ### Standard Reply Workflow
 
