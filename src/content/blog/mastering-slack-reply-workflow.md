@@ -10,7 +10,7 @@ This initial friction stems from a core design philosophy difference. Slack prio
 
 ### Standard Reply Workflow
 
-Do not copy message links for simple replies. The intended methods are faster.
+Do not copy message links for simple replies. The intended methods are faster. It's crucial to start a thread from the very first reply, as replies made in the main channel cannot be retroactively moved into a thread.
 
 *   **Mouse:** Hover over a message. Click the "Reply in thread" icon.
 *   **Keyboard:** Select a message with arrow keys. Press `T`.
@@ -19,6 +19,11 @@ Do not copy message links for simple replies. The intended methods are faster.
 Image placeholder:
 Description: A screenshot of a Slack message with the hover menu visible, highlighting the "Reply in thread" icon.
 -->
+
+#### Advanced Thread Management
+
+*   **Centralize with the "Threads" View:** In your sidebar, you'll find a "Threads" view. This is a powerful, often overlooked feature that aggregates all conversations you're a part of into a single inbox, making it easy to track replies.
+*   **Follow Without Replying:** To monitor a conversation without contributing, click the three-dot menu on the parent message and select "Follow thread." This will add the thread to your "Threads" view without sending a notification to the channel.
 
 ### Transitional Workflow: Simulating Replies with Links
 
@@ -72,7 +77,7 @@ When a thread branches, one branch can become a new, separate thread in the main
 
 This posts your reply in the main channel, creating a new parent message for a new thread.
 
-**Keyboard Navigation:** After typing your message, press `Shift+Tab` to focus the checkbox, then `Spacebar` to toggle it.
+**Keyboard Navigation:** After typing your message, press `Shift+Tab` to focus the checkbox, then `Spacebar` to toggle it. Note that Slack often remembers the state of this checkbox for subsequent replies in the same session, so be mindful of its status.
 
 <!-- 
 Image placeholder:
