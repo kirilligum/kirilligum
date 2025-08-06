@@ -51,7 +51,7 @@ const { Content } = await post.render();
             article {
                 padding: 1rem;
             }
-            .comparison-table table tr:nth-child(even) {
+            :global(.comparison-table table tr:nth-child(even)) {
                 background-color: rgba(128, 128, 128, 0.07);
             }
         </style>
