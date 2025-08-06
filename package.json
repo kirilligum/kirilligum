@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.3.0"
+    "@astrojs/mdx": "^4.2.1",
+    "astro": "^5.5.3",
+    "playwright": "^1.51.1",
+    "rehype-mermaid": "^3.0.0"
   }
 }
