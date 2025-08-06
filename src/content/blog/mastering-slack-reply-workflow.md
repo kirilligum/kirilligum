@@ -86,11 +86,6 @@ Do not copy message links for simple replies. The intended methods are faster. I
 *   **Mouse:** Hover over a message. Click the "Reply in thread" icon.
 *   **Keyboard:** Select a message with arrow keys. Press `T`.
 
-<!-- 
-Image placeholder:
-Description: A screenshot of a Slack message with the hover menu visible, highlighting the "Reply in thread" icon.
--->
-
 #### Advanced Thread Management
 
 *   **Centralize with the "Threads" View:** In your sidebar, you'll find a "Threads" view. This is a powerful, often overlooked feature that aggregates all conversations you're a part of into a single inbox, making it easy to track replies.
@@ -128,11 +123,6 @@ This is the standard for replying to a specific, earlier message within the same
 
 This bundles the context directly with your reply.
 
-<!-- 
-Image placeholder:
-Description: A screenshot of a Slack thread showing a reply that uses a blockquote to reference an earlier message in the same thread.
--->
-
 #### Method 2: Message Links
 
 Use this to reference a message from a different channel or from much earlier in a long thread. Copy the message link and paste it in your reply. Slack will unfurl it, providing a clickable link to the original context.
@@ -152,11 +142,6 @@ When a thread branches, one branch can become a new, separate thread in the main
 This posts your reply in the main channel, creating a new parent message for a new thread. Be aware that this action notifies **everyone** in the channel, not just thread participants, so use it intentionally to bring a thread update to the entire group's attention.
 
 **Keyboard Navigation:** After typing your message, press `Shift+Tab` to focus the checkbox, then `Spacebar` to toggle it. Note that Slack often remembers the state of this checkbox for subsequent replies in the same session, so be mindful of its status.
-
-<!-- 
-Image placeholder:
-Description: A screenshot of the Slack thread reply box, with an arrow pointing to the "Also send to #channel" checkbox.
--->
 
 #### The Escape Hatch Forks
 
