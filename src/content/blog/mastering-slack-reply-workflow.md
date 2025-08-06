@@ -212,9 +212,7 @@ Here are some suggested posts to share this article.
 
 **Main Tweet:**
 ```text
-New to Slack and find its reply system confusing? You're not alone.
-
-I wrote a deep-dive into Slack's threading model vs. the linear replies of Discord/Telegram, covering workflows, power-user tips, and the design philosophy behind it.
+A deep-dive into Slack's threading model vs. the linear replies of Discord/Telegram, covering workflows, power-user tips, and the design philosophy behind it.
 
 [link to post]
 
