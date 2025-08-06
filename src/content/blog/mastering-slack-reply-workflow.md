@@ -8,16 +8,15 @@ My first experience with Slack was one of frustration, a sentiment I've found is
 
 This initial friction stems from a core design philosophy difference. Slack prioritizes de-cluttering main channels for asynchronous work over the immediate, linear flow of other chat apps. Replies are intentionally sandboxed into threads. This workflow is unique to Slack, so users accustomed to other platforms may need time to adapt.
 
-### Platform Comparison: Slack vs. Other Chat Apps
+### Workflow Comparison by User Objective
 
-| Feature               | Slack                                       | Discord / Telegram / Signal                      |
-| :-------------------- | :------------------------------------------ | :----------------------------------------------- |
-| **Primary Goal**      | Asynchronous, organized team communication. | Real-time, linear social conversation.           |
-| **Reply Mechanism**   | Replies are sandboxed into **Threads**.     | Replies are **quoted** and posted in the main channel. |
-| **Channel View**      | Main channel remains clean, showing new topics. | Main channel shows a linear history of all messages. |
-| **Notification Model**  | Notifies only thread participants by default. | Can notify the original author and channel.      |
-| **Discoverability**   | Lower for new users (hidden in menus/shortcuts). | Higher for new users (dedicated reply button).   |
-| **Conversation Flow** | Conversations are siloed into parallel threads. | Conversations are intertwined in a single flow.    |
+| User Objective                                  | Slack Workflow & Outcome                                                                               | Discord / Telegram / Signal Workflow & Outcome                                                                            |
+| :---------------------------------------------- | :----------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
+| **Reply to a message**                          | Press `T` or hover to "Reply in thread". The reply is sandboxed into a separate thread pane.             | Right-click or use a dedicated button to "Reply". The reply is posted in the main channel, quoting the original message.    |
+| **Track a specific conversation**                 | Automatic. All replies are grouped into a thread. Track all followed threads in the dedicated "Threads" view. | Manual. Must scroll through the main channel to find replies or rely on mentions. Conversation context is easily lost. |
+| **Scan the main channel for new topics**        | Easy. The main channel only shows top-level "parent" messages, keeping it clean and scannable.             | Difficult. The main channel is a single, linear feed of all messages and replies, requiring scrolling to find new topics. |
+| **Alert everyone to an important reply**        | Reply in a thread and check "Also send to #channel". This promotes the reply to the main channel.        | All replies are already in the main channel. Use `@everyone` or `@here` for broad notifications.                          |
+| **Reply to an earlier point in a conversation** | Within a thread, use blockquotes (`>`) to reference a specific earlier message for context.              | Reply directly to the earlier message. The new reply appears at the bottom of the channel with a clickable link to the original. |
 
 ### Standard Reply Workflow
 
