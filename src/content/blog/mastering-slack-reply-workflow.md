@@ -8,6 +8,17 @@ My first experience with Slack was one of frustration, a sentiment I've found is
 
 This initial friction stems from a core design philosophy difference. Slack prioritizes de-cluttering main channels for asynchronous work over the immediate, linear flow of other chat apps. Replies are intentionally sandboxed into threads. This workflow is unique to Slack, so users accustomed to other platforms may need time to adapt.
 
+### Platform Comparison: Slack vs. Other Chat Apps
+
+| Feature               | Slack                                       | Discord / Telegram / Signal                      |
+| :-------------------- | :------------------------------------------ | :----------------------------------------------- |
+| **Primary Goal**      | Asynchronous, organized team communication. | Real-time, linear social conversation.           |
+| **Reply Mechanism**   | Replies are sandboxed into **Threads**.     | Replies are **quoted** and posted in the main channel. |
+| **Channel View**      | Main channel remains clean, showing new topics. | Main channel shows a linear history of all messages. |
+| **Notification Model**  | Notifies only thread participants by default. | Can notify the original author and channel.      |
+| **Discoverability**   | Lower for new users (hidden in menus/shortcuts). | Higher for new users (dedicated reply button).   |
+| **Conversation Flow** | Conversations are siloed into parallel threads. | Conversations are intertwined in a single flow.    |
+
 ### Standard Reply Workflow
 
 Do not copy message links for simple replies. The intended methods are faster. It's crucial to start a thread from the very first reply, as replies made in the main channel cannot be retroactively moved into a thread.
