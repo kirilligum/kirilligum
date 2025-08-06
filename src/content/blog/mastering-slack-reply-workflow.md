@@ -120,6 +120,8 @@ This workaround is for users transitioning from other platforms.
 
 ### Workflow Comparison
 
+<div class="comparison-table">
+
 | Point        | Slack                                                                            | Discord                                                                      |
 | :----------- | :------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
 | **Reply**    | Press `T` or hover to "Reply in thread". Sandboxes reply in a separate pane.       | Click "Reply". Posts a quoted reply in the main channel.                     |
@@ -135,8 +137,10 @@ This workaround is for users transitioning from other platforms.
 | **Onboarding**| Steeper learning curve due to unique threading model.                            | Intuitive, aligns with familiar social chat apps.                              |
 | **Mindset**  | Asynchronous work hub. Channels are inboxes; threads are tasks.                  | Real-time social space. Channels are continuous streams of conversation.     |
 
+</div>
+
 <style>
-  main table tr:nth-child(even) {
+  .comparison-table table tr:nth-child(even) {
     background-color: rgba(128, 128, 128, 0.07);
   }
 </style>
