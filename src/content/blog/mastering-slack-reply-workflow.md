@@ -25,6 +25,60 @@ This initial friction stems from a core design philosophy difference. Slack prio
 | **Onboarding**| Steeper learning curve due to unique threading model.                            | Intuitive, aligns with familiar social chat apps.                              |
 | **Mindset**  | Asynchronous work hub. Channels are inboxes; threads are tasks.                  | Real-time social space. Channels are continuous streams of conversation.     |
 
+### Visualizing Complex Conversation Flows
+
+The difference between Slack's structured threading and Discord's linear chat becomes most apparent in complex, multi-faceted conversations.
+
+#### Slack: Structured Branching
+
+Slack allows conversations to branch into contained threads, which can then be forked into new parent threads or moved to separate channels/DMs. This keeps the main channel clean while allowing structured sidebars.
+
+```mermaid
+graph TD
+    subgraph #main-channel
+        A[Message A: "Plan for Project"] --> B{Thread 1};
+        D[Message D: Forked from T1.2];
+        D --> E{Thread 2};
+    end
+
+    subgraph Thread 1 [Thread on Message A]
+        B -- "Reply" --> T1_1[T1.1: "What about Topic X?"];
+        T1_1 -- "Reply" --> T1_2[T1.2: "Good point. Let's fork this."];
+        T1_2 -- "Also send to #channel" --> D;
+        T1_1 -- "Reply" --> T1_3[T1.3: "Let's take this offline."];
+        T1_3 -- "Move to DM" --> G_DM[DM: Topic X Discussion];
+    end
+
+    subgraph Thread 2 [Thread on Message D]
+       E -- "Reply" --> T2_1[T2.1: "Continuing Topic X discussion..."];
+    end
+
+    style D fill:#f9f,stroke:#333,stroke-width:2px
+```
+
+#### Discord: Linear Chaos
+
+Discord handles all conversations in a single, chronological flow. Branching a topic requires manually creating a new channel and redirecting the conversation, leading to intertwined discussions in the original channel.
+
+```mermaid
+graph TD
+    subgraph #main-channel
+        A["Msg A: Plan for Project"];
+        A --> B["Msg B (reply to A): What about Topic X?"];
+        B --> C["Msg C (reply to A): What about Topic Y?"];
+        C --> D["Msg D (reply to B): I agree on Topic X."];
+        D --> E["Msg E (reply to C): Topic Y is blocked."];
+        E --> F["Msg F: Let's make a new channel for Topic X."];
+        F --> G[#project-topic-x];
+    end
+
+    subgraph #project-topic-x
+        G -- "Discussion continues" --> H["Msg H: OK, Topic X discussion here..."];
+    end
+
+    style F fill:#f9f,stroke:#333,stroke-width:2px
+```
+
 ### Standard Reply Workflow
 
 Do not copy message links for simple replies. The intended methods are faster. It's crucial to start a thread from the very first reply, as replies made in the main channel cannot be retroactively moved into a thread.
