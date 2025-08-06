@@ -18,7 +18,9 @@ This initial friction stems from a core design philosophy difference. Slack prio
 | **Find**     | Centralized "Threads" view shows all your conversations.                         | Decentralized. Requires searching for `@mentions` across channels.           |
 | **Alert**    | Use "Also send to #channel" to notify everyone of a key reply.                   | Use `@everyone` or `@here`.                                                  |
 | **Reference**| Use blockquotes (`>`) for context in-thread or paste a message link.             | Reply to the old message; a link back is auto-added.                         |
-| **Branch**   | Formal mechanisms: Fork a thread or create a new channel.                        | No formal mechanism. Must create a new channel.                              |
+| **Fork**     | Formal mechanism: "Also send to #channel" forks a reply into a new thread.       | No formal mechanism. Must start a new topic manually.                        |
+| **Sub-Reply**| Not supported. Use blockquotes (`>`) to manually create visual hierarchy.        | Not supported. Replies are linear and push to the bottom.                    |
+| **Switch**   | Efficient. The "Threads" view acts as an inbox for all active discussions.       | Inefficient. Requires manually navigating channels and scrolling.            |
 | **Noise**    | Low by default. Notifications are thread-scoped, reducing interruptions.         | High by default. Notifications are channel-scoped.                           |
 | **Onboarding**| Steeper learning curve due to unique threading model.                            | Intuitive, aligns with familiar social chat apps.                              |
 
