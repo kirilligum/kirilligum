@@ -32,7 +32,7 @@ This keyboard-centric method pastes a direct link to the message you are "replyi
 4.  Navigate back to the message input box.
 5.  Paste the URL (`Ctrl+V`) and type your message.
 
-*(Note: Custom browser extensions may override Slack's default keyboard shortcuts.)*
+*(Note: This workflow can be further optimized with browser extensions. For example, a power user with a tool like Surfingkeys might use a visual mode shortcut (`v`) to select a message timestamp and then `y` to yank (copy) its URL, achieving the same result with fewer keystrokes. However, be aware that such extensions may override Slack's default keyboard shortcuts.)*
 
 ### Managing Branched Conversations Within a Thread
 
