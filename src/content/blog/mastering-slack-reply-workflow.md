@@ -1,7 +1,8 @@
 ---
 title: "Mastering Slack's Reply Workflow"
 description: "A concise guide for technical users on efficiently handling replies and branching conversations in Slack."
-pubDate: "2024-08-01"
+date: "2024-08-01"
+tags: ["slack", "workflow", "productivity"]
 ---
 
 Replying in Slack is non-obvious for new users because its threading model differs fundamentally from other chat apps. While platforms like Discord use a linear, quote-reply flow, Slack sandboxes conversations into threads to maintain channel clarity for asynchronous work. This guide provides workflows for efficient replies and conversation management.
