@@ -1,0 +1,179 @@
+    #[1]RSS Feed for realfiction.net
+
+[2]realfiction
+
+   [3]Archive Archive [4]Tags Tags [5]About
+
+                                Mermaid in Astro
+
+   Mar 20 2025
+
+   [6]site
+
+   [7]web
+
+     * [8]mermaid is a library that allows you to create a variety of
+       diagrams and charts with a relatively simple markdown syntax
+     * [9]Astro is a web framework to build static sites as well as sites
+       with interaction islands. Think Jekyll, but for 2025.
+
+   The [10]release notes of Astro 5.5 explicitly mentioned that it should
+   now be much easier to integrate mermaid-based diagramming into Astro
+   sites, which immediately peaked my interest as this was something I
+   thought of as nice-to-have to support some technical discussion e.g.
+   with a flowchart or a sequence diagram.
+
+   Setting it up was not that difficult, yet it still presented me with
+   some gotchas that you may also trip over as a novice in those
+   particular technologies. Hence this post essentially serves as a
+   documentation what I had to do. Let’s start with an overview:
+
+Ensure Astro 5.5+
+
+   Piece of cake (assuming you already have an Astro site going):
+
+   Terminal window
+
+   npx @astrojs/upgrade
+
+   (BUTTON)
+
+Install necessary dependencies
+
+   The following packages were relevant:
+
+   package.json
+
+   "dependencies": {
+
+   "astro": "^5.5.3",
+   "@astrojs/mdx": "^4.2.1",
+   "...": "...",
+   "playwright": "^1.51.1",
+   "rehype-mermaid": "^3.0.0"
+   }
+   (BUTTON)
+
+   [11]playwright is apparently necessary to be able to create the images
+   generated from mermaid markdown statically, i.e. not directly in the
+   browser of the visitor hitting realfiction.net.
+
+   Also, make sure playwright can work correctly:
+
+   Terminal window
+
+   npx playwright install --with-deps chromium
+
+   (BUTTON)
+
+Change Astro configuration
+
+   Time to touch the site’s configuration:
+
+   astro-config.mjs
+
+   import rehypeMermaid from "rehype-mermaid";
+
+   export default defineConfig({
+   ...
+   markdown: {
+   syntaxHighlight: {
+   type: "shiki",
+   excludeLangs: ["mermaid"]
+   },
+   rehypePlugins: [[rehypeMermaid, { strategy: "img-svg", dark: true,
+   colorScheme: "forest" }]]
+   },
+   integrations: [
+   ...
+   mdx(),
+   sitemap(),
+   ],
+   });
+   (BUTTON)
+
+   Check out the [12]rehype mermaid repo to see what options are available
+   to you.
+
+Deployment? Make sure Playwright gets installed correctly
+
+   The final stumbling block was the actual deployment that I do via
+   github actions. Here it is necessary to also ensure that playwright
+   will work correctly.
+
+   deploy.yml
+
+   jobs:
+
+   build:
+   runs-on: ubuntu-latest
+   steps:
+   - name: Checkout your repository using git
+   uses: actions/checkout@v4
+   - name: Get playwright for mermaid stuff
+   run: npx playwright install --with-deps chromium
+   - name: Install, build, and upload your site
+   uses: withastro/action@v2
+   (BUTTON)
+
+Conclusion
+
+   and this is pretty much it! Of course the generated diagrams may not
+   win beauty contests, but dark mode is supported and it is a pretty easy
+   workflow to eg tell chat gpt to make some mermaid workflow from an
+   informal description and then paste the text here. Btw, the above
+   workflow looks like this in the source code:
+
+   ```mermaid
+
+   graph TD
+   S((Start)) --> A[Ensure Astro 5.5+]
+   A --> B[Install necessary dependencies]
+   B --> C[Change Astro configuration]
+   C --> D{Need to deploy?}
+   D -- Yes --> E[Make sure Playwright gets installed]
+   D -- No --> F((Finished))
+   E --> F
+   ```
+   (BUTTON)
+     __________________________________________________________________
+
+  Comments
+
+   With an account on the Fediverse or Mastodon, you can respond to this
+   [13]post. Since the Fediverse is decentralized, you can use your
+   existing account hosted by another Mastodon server or compatible
+   platform if you don't have an account on this one. Known non-private
+   replies are displayed below.
+   [14]Reply to this blog post via mastodon
+
+   Loading comments relies on JavaScript. Try enabling JavaScript and
+   reloading, or visit [15]the original post on Mastodon.
+
+   [16]Depending on a colour[17]Depending on a colour Pt. 2 - Needs,
+   Possibilities and Limitations
+
+   [18]Creative Commons License
+
+   Frank Quednau 2025
+
+References
+
+   1. https://realfiction.net/rss.xml
+   2. https://realfiction.net/
+   3. https://realfiction.net/archive
+   4. https://realfiction.net/tags
+   5. https://realfiction.net/about
+   6. https://realfiction.net/tags/site
+   7. https://realfiction.net/tags/web
+   8. https://mermaid.js.org/
+   9. https://astro.build/
+  10. https://astro.build/blog/astro-550/
+  11. https://playwright.dev/
+  12. https://github.com/remcohaszing/rehype-mermaid
+  13. https://freiburg.social/@flq/114196728458280273
+  14. https://freiburg.social/@flq/114196728458280273
+  15. https://freiburg.social/@flq/114196728458280273
+  16. https://realfiction.net/posts/depending-on-a-color
+  17. https://realfiction.net/posts/depending-on-a-color-pt2
+  18. http://creativecommons.org/licenses/by-nc-sa/4.0/
