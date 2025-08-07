@@ -22,7 +22,13 @@ projectsPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()); // 
 				font-family: monospace;
 				margin-bottom: 2rem;
 			}
-			h1, h2 {
+			h1 {
+				font-family: monospace;
+				font-weight: bold;
+				line-height: 1.1;
+				margin-bottom: 1rem;
+			}
+			h2, h3, h4, h5, h6 {
 				font-family: monospace;
 				font-weight: bold;
 				line-height: 1.1;
@@ -32,12 +38,6 @@ projectsPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()); // 
 				display: inline-block;
 				box-shadow: 6px 6px 0px #222;
 				background-color: #f0f0f0;
-			}
-			h3, h4, h5, h6 {
-				font-family: monospace;
-				font-weight: bold;
-				line-height: 1.1;
-				margin-bottom: 0.5rem;
 			}
 			section {
 				margin-bottom: 2rem;
