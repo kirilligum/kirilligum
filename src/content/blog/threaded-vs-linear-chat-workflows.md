@@ -1,5 +1,5 @@
 ---
-title: "Analysis: Why Quote-Reply is a Superior Professional Communication Flow"
+title: "Analysis: Why Quote-Reply is Superior to Slack's Model for Professional Communication"
 description: "An analysis of why the Quote-Reply model (used by Discord, WhatsApp, etc.) is a more effective and intuitive professional communication flow than the high-effort 'To-Parent' structure used by Slack."
 date: 2024-08-07
 tags: ["slack", "discord", "workflow", "design", "hci", "ux", "communication"]
