@@ -5,7 +5,7 @@ date: 2024-08-07
 tags: ["slack", "discord", "workflow", "productivity", "migration"]
 ---
 
-For users accustomed to Discord's linear, quote-reply flow, migrating to Slack can be disorienting. Slack's threading model is a fundamental departure designed for asynchronous work, but it requires a new mental model. This guide provides tactical workflows to help you master Slack and even replicate some of Discord's familiar functionality.
+For users accustomed to Discord's chronological, graph-based conversations, migrating to Slack can be disorienting. Slack's threaded model is a fundamental architectural departure designed for asynchronous work, but it requires a new mental model. This guide provides tactical workflows to help you master Slack and even replicate some of Discord's familiar functionality.
 
 ### Key Takeaways
 
@@ -97,4 +97,4 @@ These tips map common Discord power features to their Slack equivalents.
 
 ---
 
-For a deeper dive into the design principles, market trends, and academic research behind these different chat models, see the companion post: [Threaded vs. Linear Chat: A Deep Dive into Workflow Design](/blog/threaded-vs-linear-chat-workflows).
+For a deeper dive into the design principles, market trends, and academic research behind these different chat architectures, see the companion post: [Chat Architecture: A Deep Dive into Threaded Forests vs. Reply Graphs](/blog/threaded-vs-linear-chat-workflows).
