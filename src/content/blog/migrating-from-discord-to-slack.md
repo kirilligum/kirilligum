@@ -11,10 +11,9 @@ For users accustomed to Discord's chronological, graph-based conversations, migr
 ### Key Takeaways
 
 *   **Embrace Threads:** The core workflow is replying in threads (`T` key). Avoid posting replies in the main channel to keep conversations organized.
-*   **Use the "Threads" View:** This dedicated view in the sidebar is your new inbox for all conversations you're following. Use it to track replies efficiently.
-*   **Simulate Quote-Replies:** Use blockquotes (`>`) for short references or paste a message link for longer ones to approximate Discord's reply context.
 *   **Fork Conversations Intentionally:** Use the "Also send to #channel" checkbox to surface an important discussion from a thread to the main channel.
-*   **Master the Quick Switcher (`Ctrl+K`):** This is the fastest way to navigate channels and DMs, similar to Discord's Quick Jumper.
+*   **Simulate Quote-Replies:** Use blockquotes (`>`) for short references or paste a message link for longer ones to approximate Discord's reply context.
+*   **Master Key Shortcuts:** Use `T` to reply in a thread, `Ctrl+K` to quickly switch channels, and `L` to copy a message link for manual quote-replying.
 
 ### Standard Slack Reply Workflow: Threads
 
