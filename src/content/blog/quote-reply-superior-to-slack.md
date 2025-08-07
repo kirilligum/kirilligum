@@ -130,16 +130,16 @@ For a practical guide on how to apply these concepts when moving from Discord to
 
 ### Microblogging Post
 
-Why Quote-Reply (Discord, WhatsApp) is superior to Slack's model for professional communication:
+Why Quote-Reply (Discord) is superior to Slack's threads for professional communication:
 
-1.  **Different Goals:** Quote-Reply is for fast, intuitive **communication**. Slack's model is for high-effort **information structuring**. It's a conversation vs. a filing cabinet.
+1.  **Communication vs. Structuring:** Quote-Reply is for fast, intuitive dialogue. Slack's model is for high-effort information filing—a conversation vs. a filing cabinet.
 
-2.  **Cognitive Tax:** Slack's model forces you to categorize every message before sending, stifling the natural flow of dialogue.
+2.  **Continuous Cognitive Tax:** Slack forces you to categorize every message *before* sending, stifling the natural flow of dialogue.
 
 3.  **Premature Optimization:** Forcing structure on ideas too early kills creativity. The "chaos" of a Quote-Reply stream is a feature for brainstorming.
 
-4.  **Market Proof:** The global dominance of Quote-Reply proves users prefer tools that aid dialogue over those that force documentation.
+4.  **Market Proof:** Global dominance of Quote-Reply proves users prefer tools that aid dialogue, not force documentation.
 
-Read the full analysis: https://kirilligum.com/blog/quote-reply-superior-to-slack/
+Full analysis: https://kirilligum.com/blog/quote-reply-superior-to-slack/
 
 #Slack #Discord #UX #Design #Communication

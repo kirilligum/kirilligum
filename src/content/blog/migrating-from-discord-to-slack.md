@@ -89,16 +89,16 @@ For a deeper dive into the design principles, market trends, and academic resear
 
 ### Microblogging Post
 
-Migrating from Discord to Slack? A quick guide:
+A Discord user's survival guide for Slack:
 
-1.  **Embrace Threads:** Always reply in threads. Select a message, press `T`. This is the core of organized communication.
+1.  **Thread Everything:** Always reply in threads. Select a message, press `T`. This keeps channels clean.
 
-2.  **Simulate Quote-Reply:** To quote, copy a message link. Select a message, press `L`, then paste the link in your reply. Slack unfurls it for context.
+2.  **Simulate Quote-Reply:** Select a message, press `L` to copy its link, then paste it in your reply. Slack unfurls it, adding context.
 
-3.  **Fork Intentionally:** To surface a thread discussion to the main channel, use the "Also send to #channel" checkbox. Use sparingly.
+3.  **Surface Threads Intentionally:** Use the "Also send to #channel" checkbox to fork a key discussion from a thread to the main channel. Use sparingly.
 
-4.  **Master Shortcuts:** Use the "Threads" view as your inbox and `Ctrl+K` to navigate channels instantly.
+4.  **Navigate Fast:** Use the "Threads" view as your inbox and `Ctrl+K` to instantly switch channels.
 
-Read the full guide: https://kirilligum.com/blog/migrating-from-discord-to-slack/
+Full guide for power users: https://kirilligum.com/blog/migrating-from-discord-to-slack/
 
 #Slack #Discord #Productivity #Workflow
