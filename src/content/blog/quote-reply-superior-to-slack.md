@@ -179,6 +179,6 @@ Usability wins.
 
 5/ When is Slack's model useful?
 
-When the goal *is* documentation. It's analogous to developers creating a component architecture in software—a deliberate, high-effort task for future clarity.
+When the goal is to force the separation of conversations into discrete components. It's analogous to developers creating a component architecture in software—a deliberate, high-effort task for future clarity.
 
 But that isn't communication. It's building a knowledge base.
