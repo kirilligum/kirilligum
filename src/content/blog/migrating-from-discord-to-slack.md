@@ -86,3 +86,48 @@ These tips map common Discord power features to their Slack equivalents.
 ---
 
 For a deeper dive into the design principles, market trends, and academic research behind these different chat architectures, see the companion post: [Analysis: Why Quote-Reply is Superior to Slack's Model for Professional Communication](/blog/quote-reply-superior-to-slack).
+
+### Microblogging Thread
+
+**Opening Post**
+
+Migrating from Discord to Slack? It's a different world. Slack's threaded model requires a new mental model, but you can master it.
+
+A thread on adapting your workflow, from threads to quote-replies. 🧵
+
+Read the full guide: https://kirilligum.com/blog/migrating-from-discord-to-slack/
+
+#Slack #Discord #Productivity #Workflow #Migration
+
+---
+
+**Replies**
+
+1/ The #1 rule: Embrace threads.
+
+Almost every reply should be in a thread. Don't post replies in the main channel.
+
+Keyboard shortcut: Select a message with arrow keys, then press `T` to reply. This is the core of organized communication in Slack.
+
+---
+
+2/ How to "quote-reply" like in Discord.
+
+Slack has no native quote-reply. The best workaround is to use message links.
+
+Select a message, press `L` to copy its link, and paste it in your reply. Slack unfurls it, providing context.
+
+---
+
+3/ Fork conversations intentionally.
+
+Need to surface a key discussion from a thread to the whole channel?
+
+Use the "Also send to #channel" checkbox. This creates a new parent message, notifying everyone. Use it sparingly for important updates.
+
+---
+
+4/ Master the essentials for speed.
+
+• **Threads View:** Use the dedicated "Threads" view in the sidebar. It's your new inbox for all conversations you follow.
+• **Quick Switcher (`Ctrl+K`):** The fastest way to jump between channels and DMs.
