@@ -214,7 +214,7 @@ Here are some suggested posts to share this article.
 ```text
 A deep-dive into Slack's threading model vs. the linear replies of Discord/Telegram, covering workflows, power-user tips, and the design philosophy behind it.
 
-[link to post]
+https://kirilligum.com/blog/mastering-slack-reply-workflow/
 
 #Slack #Productivity
 ```
