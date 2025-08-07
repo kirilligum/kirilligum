@@ -20,7 +20,7 @@ For users accustomed to Discord's chronological, graph-based conversations, migr
 Use threads for all replies. The intended methods are faster, and replies cannot be retroactively moved into a thread.
 
 *   **Mouse:** Hover over a message. Click the "Reply in thread" icon.
-*   **Keyboard:** Select a message with arrow keys. Press `T`.
+*   **Keyboard:** From the message input box, press the `Up Arrow` key to select the most recent message. Continue pressing `Up` to navigate to older messages, then press `T` to reply in a thread.
 
 #### Advanced Thread Management
 
