@@ -50,7 +50,7 @@ The structural differences are most apparent in complex conversations.
 
 #### Slack: A Forest of Conversation Trees
 
-A channel is a collection of conversation trees (threads). Each tree is isolated, preventing conversations from interfering with each other. This maintains clarity in the main channel view.
+A channel is a collection of conversation trees (threads). Each tree is isolated, preventing conversations from interfering with each other. Within a thread, replies form a flat, chronological list; there are no native nested replies. To create a direct link between replies, users must manually paste message links. This maintains clarity in the main channel view.
 
 ```mermaid
 graph TD
@@ -62,9 +62,9 @@ graph TD
 
     subgraph "Thread 1 (on Message A)"
         B -- "Reply" --> T1_1["T1.1: What about Topic X?"];
-        T1_1 -- "Reply" --> T1_2["T1.2: Good point. Let's fork."];
+        T1_1 --> T1_2["T1.2: Good point. Let's fork."];
+        T1_2 --> T1_3["T1.3: Let's take this offline."];
         T1_2 -- "Also send to #channel" --> D;
-        T1_1 -- "Reply" --> T1_3["T1.3: Let's take this offline."];
         T1_3 -- "Move to DM" --> G_DM["DM: Topic X Discussion"];
     end
 
@@ -83,12 +83,19 @@ A channel is a single, chronologically ordered stream of messages. Replies creat
 graph TD
     subgraph #main-channel
         A["Msg A (Project Plan)"];
-        A --> B["Msg B (Reply to A on Topic X)"];
-        B --> C["Msg C (Reply to A on Topic Y)"];
-        C --> D["Msg D (Reply to B on Topic X)"];
-        D --> E["Msg E (Reply to C on Topic Y)"];
-        E --> F["Msg F (Suggest new channel for Topic X)"];
-        F --> G[#project-topic-x];
+        B["Msg B (Reply to A on Topic X)"];
+        C["Msg C (Reply to A on Topic Y)"];
+        D["Msg D (Reply to B on Topic X)"];
+        E["Msg E (Reply to C on Topic Y)"];
+        F["Msg F (Suggest new channel for Topic X)"];
+        G[#project-topic-x];
+
+        A --> B;
+        A --> C;
+        B --> D;
+        C --> E;
+        E --> F;
+        F --> G;
     end
 
     subgraph #project-topic-x
