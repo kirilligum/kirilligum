@@ -34,11 +34,11 @@ The market data is unequivocal: the Quote-Reply model is the globally dominant s
 | :----------- | :---------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
 | **Primary Goal** | **Communication.** Facilitate fast, intuitive, human-like dialogue.              | **Structuring.** Force creation of a structured knowledge base that is easier to follow if a specific slack-like style is used. |
 | **Optimizes For** | **Writer's Speed.** Low friction to contribute. Encourages fast, reactive dialogue. | **Future Reader's Retrieval.** Enforces upfront organization.                     |
-| **Cognitive Load** | Low for the writer. High for readers, who must mentally parse interleaved conversations. | **High and continuous for the writer,** who must categorize every message.        |
+| **Cognitive Load** | Low for the writer. Higher for readers, who must mentally parse interleaved conversations and follow the conversational thread by clicking through quoted messages. | **High and continuous for the writer,** who must categorize every message.        |
 | **Core Use Case** | Brainstorming, decision-making, social chat—all forms of dialogue.              | Asynchronous status updates, Q&A, and task-specific documentation.                 |
 | **Expressiveness** | High. The low friction encourages free-flowing, referential conversation.        | Lower. The structure stifles spontaneous thoughts that don't fit neatly.      |
 | **Analogy** | A lively group conversation.                                                        | A physical filing cabinet or software component architecture.                     |
-| **Primary Flaw** | **Requires Reader Focus.** In busy channels, readers must actively track conversations, similar to a real-life group discussion. | **Premature Organization.** Creativity is killed by enforcing structure too early.|
+| **Primary Flaw** | **Requires Reader Focus.** In busy channels, readers must actively track conversations, similar to a real-life group discussion. | **Premature Organization.** Creativity is limited by enforcing structure too early.|
 | **Usability** | Intuitive. Aligns with the dominant mental model from SMS and other social apps.  | Non-intuitive. Violates established mental models, requiring user re-training.    |
 
 </div>
