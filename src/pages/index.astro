@@ -1,7 +1,12 @@
 ---
 import { getCollection } from 'astro:content';
 const blogPosts = await getCollection('blog');
-blogPosts.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf()); // Sort blog posts by date, earliest first
+// Sort by updated date if available, otherwise by publish date, most recent first.
+blogPosts.sort((a, b) => {
+	const dateA = a.data.updatedDate || a.data.date;
+	const dateB = b.data.updatedDate || b.data.date;
+	return dateB.valueOf() - dateA.valueOf();
+});
 const projectsPosts = await getCollection('projects');
 projectsPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()); // Sort projects by date
 ---
