@@ -38,7 +38,7 @@ The market data is unequivocal: the Quote-Reply model is the globally dominant s
 | **Core Use Case** | Brainstorming, decision-making, social chat—all forms of dialogue.              | Asynchronous status updates, Q&A, and task-specific documentation.                 |
 | **Expressiveness** | High. The low friction encourages free-flowing, referential conversation.        | Lower. The structure stifles spontaneous thoughts that don't fit neatly.      |
 | **Analogy** | A lively group conversation.                                                        | A physical filing cabinet or software component architecture.                     |
-| **Primary Flaw** | **Context Collapse.** Important conversations can become buried in high-velocity channels. | **Premature Organization.** Creativity is killed by enforcing structure too early.|
+| **Primary Flaw** | **Requires Reader Focus.** In busy channels, readers must actively track conversations, similar to a real-life group discussion. | **Premature Organization.** Creativity is killed by enforcing structure too early.|
 | **Usability** | Intuitive. Aligns with the dominant mental model from SMS and other social apps.  | Non-intuitive. Violates established mental models, requiring user re-training.    |
 
 </div>
