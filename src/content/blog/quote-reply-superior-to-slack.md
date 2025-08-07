@@ -132,7 +132,7 @@ For a practical guide on how to apply these concepts when moving from Discord to
 
 **Main Tweet**
 
-Why is Quote-Reply (Discord, WhatsApp) superior to Slack's model for professional communication?
+Why is Quote-Reply (Discord, WhatsApp) superior to Slack's "Also send to #..." model for professional communication?
 
 A thread on chat architecture, cognitive load, and why the market has chosen a clear winner for dialogue. 🧵
 
