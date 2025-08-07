@@ -22,7 +22,7 @@ This post argues that the Quote-Reply model is fundamentally superior for univer
 The market data is unequivocal: the Quote-Reply model is the globally dominant standard for digital communication.
 
 *   **Universal Adoption (Quote-Reply):** Platforms like WhatsApp (projected 3.14B MAU in 2025) and Telegram (1B MAU), which use the intuitive Quote-Reply model, operate at a scale that demonstrates near-universal user preference. This model is the de facto standard for all forms of digital dialogue.
-*   **Niche Tooling (To-Parent):** Slack's success in a high-value enterprise niche (projected 79M MAU in 2025) is not evidence of its model's superiority as a communication tool. Rather, it succeeded *despite* its less usable model because it solved a specific business problem for asynchronous teams: creating a persistent, searchable knowledge base. It won on features like integrations and enterprise security, not on the merits of its core reply mechanic as a form of communication.
+*   **Niche Tooling (To-Parent):** Slack's success in a high-value enterprise niche (projected 79M MAU in 2025) is not evidence of its model's superiority as a communication tool. Rather, it succeeded *despite* its less usable model by creating the "digital headquarters" category and benefiting from a first-mover advantage. By focusing on high-paying professional and enterprise customers—a stark contrast to the free or low-cost models of its consumer-focused competitors—it accelerated revenue growth and won on features like integrations and enterprise security, not on the merits of its core reply mechanic as a form of communication.
 
 *Source: Market data from Business of Apps, Statista (2024 projections for 2025).*
 
