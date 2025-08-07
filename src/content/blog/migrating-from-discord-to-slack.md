@@ -12,8 +12,8 @@ For users accustomed to Discord's chronological, graph-based conversations, migr
 
 *   **Embrace Threads:** The core workflow is replying in threads (`T` key). Avoid posting replies in the main channel to keep conversations organized.
 *   **Fork Conversations Intentionally:** Use the "Also send to #channel" checkbox to surface an important discussion from a thread to the main channel.
-*   **Simulate Quote-Replies:** Use blockquotes (`>`) for short references or paste a message link for longer ones to approximate Discord's reply context.
-*   **Master Key Shortcuts:** Use `T` to reply in a thread, `Ctrl+K` to quickly switch channels, and `L` to copy a message link for manual quote-replying.
+*   **Simulate Quote-Replies:** Press `L` to copy a message link and paste it in your reply. Slack automatically unfurls the link to provide context, approximating Discord's quote-reply.
+*   **Master Key Shortcuts:** Use `T` to reply in a thread and `Ctrl+K` to quickly switch channels.
 
 ### Standard Slack Reply Workflow: Threads
 
@@ -30,24 +30,23 @@ Use threads for all replies. The intended methods are faster, and replies cannot
 #### Anti-Pattern: Editing to Reply
 Avoid replying in-channel and then editing the message to add an `@mention`. This action does not create a thread, fails to notify thread followers, and clutters the main channel.
 
-### Managing Branched Conversations in a Thread
+### Simulating Quote-Replies with Message Links
 
-Manage context manually when a single thread contains multiple conversational branches, as Slack does not support nested threads.
+When a single thread contains multiple conversational branches, or you need to reference an older message, you must manually provide context. Slack does not support nested threads, but you can simulate quote-replies using message links. This is the most effective way to approximate Discord's functionality.
 
-#### Method 1: Block Quotes (Simulating Quote-Reply)
+The workflow is to copy a message's link and paste it into your reply. Slack automatically unfurls the link, showing a preview of the original message.
 
-Use blockquotes to reply to a specific, earlier message within the same thread.
+**Mouse Workflow:**
+1.  Hover over the target message.
+2.  Click the three-dot menu and select "Copy link".
+3.  Paste the link into your reply.
 
-1.  Copy text from the message you are referencing.
-2.  In the reply box, type `>` followed by a space.
-3.  Paste the copied text.
-4.  Write your reply on a new line.
-
-This method bundles the context directly with the reply.
-
-#### Method 2: Message Links (Simulating Reply with Link)
-
-Use this to reference a message from a different channel or from much earlier in a long thread. Copy the message link and paste it in your reply. Slack will unfurl it, providing a clickable link to the original context.
+**Keyboard Workflow:**
+For power users who prefer a keyboard-centric workflow:
+1.  Navigate between panes (`Ctrl+F6` in the browser) to focus the channel or thread history.
+2.  Use arrow keys to select the target message.
+3.  Press `L` to copy the message URL to your clipboard.
+4.  Navigate back to the message input box and paste (`Ctrl+V`).
 
 ### Forking a Thread
 
@@ -72,17 +71,6 @@ Use these when a sub-topic requires a smaller audience or becomes a self-contain
 *   **Group DM:** For focused discussions (2-4 people). Announce the move in the original thread: "Moving this to a DM with @personA," and paste the original thread link for context.
 *   **Temporary Private Channel:** For larger workstreams. Create a new channel (e.g., `#temp-project-feature`), announce the move, and post the original thread link for context.
 
-### Manual Workflow: Simulating Replies with Links
-
-For power users who prefer a keyboard-centric workflow that closely mimics Discord's reply functionality, you can use message links.
-
-1.  Navigate between panes (`Ctrl+F6` in the browser) to focus the channel or thread history.
-2.  Use arrow keys to select the target message.
-3.  Press `L` to copy the message URL to your clipboard.
-4.  Navigate back to the message input box.
-5.  Paste the URL (`Ctrl+V`) and type your message.
-
-*(Note: This workflow can be further optimized with browser extensions. For example, a power user with a tool like Surfingkeys might use a visual mode shortcut (`v`) to select a message timestamp and then `y` to yank (copy) its URL, achieving the same result with fewer keystrokes. However, be aware that such extensions may override Slack's default keyboard shortcuts.)*
 
 ### Power User Tips for Discord Converts
 
