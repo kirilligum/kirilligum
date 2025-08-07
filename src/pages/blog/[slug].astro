@@ -36,16 +36,23 @@ const { Content } = await post.render();
 			}
 			header {
 				font-family: monospace;
-				margin-bottom: 2rem;
-			}
-			header p {
-				margin: 0.5rem 0 0;
+				margin-bottom: 1.5rem; /* Reduced space */
 			}
 			h1 {
 				font-family: 'Questrial', monospace;
 				font-weight: bold;
 				line-height: 1.1;
 				margin-bottom: 1rem;
+			}
+			header > h1 {
+				margin: 0;
+				font-size: 1.2rem;
+			}
+			header a {
+				text-decoration: none;
+			}
+			header a:hover {
+				text-decoration: underline;
 			}
 			article :global(h2, h3, h4, h5, h6) {
 				font-family: 'Questrial', monospace;
@@ -82,8 +89,7 @@ const { Content } = await post.render();
 	</head>
 	<body>
 		<header>
-			<h1>Blog</h1>
-			<p><a href="/">Back to Home</a></p>
+			<h1><a href="/">🏠</a> / Blog</h1>
 		</header>
 		<section>
             <article>
