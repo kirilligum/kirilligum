@@ -128,9 +128,9 @@ The overwhelming market dominance of the Quote-Reply model suggests that for the
 ---
 For a practical guide on how to apply these concepts when moving from Discord to Slack, see the companion post: [A Discord User's Guide to Mastering Slack](/blog/migrating-from-discord-to-slack).
 
-### Microblogging
+### Microblogging Thread
 
-**Main Tweet**
+**Opening Post**
 
 Why is Quote-Reply (Discord, WhatsApp) superior to Slack's "Also send to #..." model for professional communication?
 
