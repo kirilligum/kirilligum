@@ -136,7 +136,7 @@ Why is Quote-Reply (Discord, WhatsApp) superior to Slack's "Also send to #..." m
 
 A thread on chat architecture, cognitive load, and why the market has chosen a clear winner for dialogue. 🧵
 
-Read the full analysis: [LINK TO YOUR BLOG POST]
+Read the full analysis: https://kirilligum.com/blog/quote-reply-superior-to-slack/
 
 #Slack #Discord #UX #Design #Communication
 
