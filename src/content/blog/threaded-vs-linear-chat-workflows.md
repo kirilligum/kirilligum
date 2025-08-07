@@ -7,7 +7,7 @@ tags: ["slack", "discord", "workflow", "design", "hci", "ux", "communication"]
 
 The design of a chat application's primary reply function is one of its most consequential choices, shaping user behavior and overall productivity. The market has overwhelmingly converged on the **Quote-Reply** model, used by Discord, WhatsApp, and nearly every other major platform. There is one significant outlier: Slack, whose **To-Parent** model represents a radical departure from convention.
 
-This post argues that the Quote-Reply model is fundamentally superior for universal communication—including professional and enterprise use—because it aligns with natural human dialogue. The To-Parent model is not a competitor but a niche, high-effort tool for a different task entirely: forcing users to structure conversations into discrete components, much like software developers architecting code. For general communication, this is not a feature but a flaw that imposes a constant cognitive tax.
+This post argues that the Quote-Reply model is fundamentally superior for universal communication—including professional and enterprise use—because it aligns with natural human dialogue. The To-Parent model is not a competitor but a niche, high-effort tool for a different task entirely. Instead of making a familiar Quote-Reply user-friendly, Slack deliberately makes it difficult—requiring users to manually copy a message's URL and paste it—while making the "Also send to #{parent}" checkbox prominent and easily accessible. This design choice forces users to structure conversations into discrete components, much like software developers architecting code. For general communication, this is not a feature but a flaw that imposes a constant cognitive tax.
 
 ### Key Takeaways
 
