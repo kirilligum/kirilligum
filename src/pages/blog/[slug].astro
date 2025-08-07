@@ -66,6 +66,10 @@ const { Content } = await post.render();
 		<section>
             <article>
                 <h2>{post.data.title}</h2>
+                <p style="font-size: 0.8em; color: #777;">
+                    Published: {post.data.date.toLocaleDateString()}
+                    {post.data.updatedDate && ` | Updated: ${post.data.updatedDate.toLocaleDateString()}`}
+                </p>
                 <Content />
             </article>
  		</section>

@@ -2,6 +2,7 @@
 title: "A Discord User's Guide to Mastering Slack"
 description: "A practical guide for Discord users on how to adapt to Slack's threaded workflow, manage conversations, and approximate familiar features."
 date: 2024-08-07
+updatedDate: 2025-08-07
 tags: ["slack", "discord", "workflow", "productivity", "migration"]
 ---
 

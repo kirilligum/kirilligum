@@ -23,10 +23,12 @@ All blog posts must include the following frontmatter fields:
 title: "Your Post Title"
 description: "A concise, one-sentence description of the post."
 date: YYYY-MM-DD
+updatedDate: YYYY-MM-DD # Optional
 tags: ["tag1", "tag2", "etc"]
 ---
 ```
 -   `date` must be a valid date and not enclosed in quotes.
+-   `updatedDate` is optional, for when a post is updated. It should also be a valid date.
 -   `tags` must be a list of relevant keywords.
 
 ## Styled Components

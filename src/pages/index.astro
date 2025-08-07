@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 const blogPosts = await getCollection('blog');
+blogPosts.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf()); // Sort blog posts by date, earliest first
 const projectsPosts = await getCollection('projects');
 projectsPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()); // Sort projects by date
 ---
@@ -54,6 +55,10 @@ projectsPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()); // 
 				{blogPosts.map((post) => (
 					<li>
 						<a href={`/blog/${post.slug}`}>{post.data.title}</a>
+                        <span style="font-size: 0.8em; color: #777; margin-left: 1em;">
+                            {post.data.date.toLocaleDateString()}
+                            {post.data.updatedDate && ` (updated ${post.data.updatedDate.toLocaleDateString()})`}
+                        </span>
 					</li>
 				))}
 			</ul>
