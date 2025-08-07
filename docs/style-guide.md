@@ -4,15 +4,15 @@ This document provides guidelines for writing new blog posts to ensure consisten
 
 ## Writing Style: Technical-Journalistic
 
-All posts should adhere to the "Technical-Journalistic" style. This style prioritizes efficiency and clarity for a time-conscious, analytical reader.
+This style prioritizes efficiency and clarity for a time-conscious, analytical reader. It treats information as a valuable asset and aims to deliver it with the highest possible signal-to-noise ratio.
 
 **Core Principles:**
 
-1.  **Lead with the Conclusion:** Start every section with the most critical information.
-2.  **Use Action-Oriented Language:** Use imperative verbs and an active voice.
-3.  **Eliminate Narrative:** Remove personal anecdotes and conversational filler.
-4.  **Maximize Information Density:** Ensure every sentence provides new, substantive information.
-5.  **Structure for Clarity:** Use bolding for key terms and bullet/numbered lists.
+1.  **Lead with the Conclusion (Inverted Pyramid):** Start every section and paragraph with the most critical information or the primary action. Supporting details and context follow, never precede, the main point.
+2.  **Use Action-Oriented Language:** Employ imperative verbs and an active voice. Frame headings and sentences as direct instructions or definitive statements.
+3.  **Eliminate Narrative and Hedging:** Remove personal anecdotes ("My experience was..."), conversational filler ("Let's talk about..."), and hedging words ("might," "could," "seems to").
+4.  **Maximize Information Density:** Ensure every sentence provides new, substantive information. Combine related ideas and cut redundant phrases. Use short paragraphs to make text scannable.
+5.  **Structure for Clarity:** Use bolding for key terms, bullet points for parallel concepts, and numbered lists for sequential steps. This provides clear visual signposts for the reader.
 
 ## Frontmatter
 
