@@ -77,7 +77,7 @@ graph TD
 
 #### Discord: A Chronological Reply Graph
 
-A channel is a single, chronologically ordered stream of messages. Replies create a directed graph structure, but all messages remain interleaved in the main view, leading to "context collapse" as conversations cross.
+A channel is a single, chronologically ordered stream of messages (bold arrows). Replies create a directed graph structure (thin arrows), but all messages remain interleaved in the main view, leading to "context collapse" as conversations cross.
 
 ```mermaid
 graph TD
@@ -96,6 +96,8 @@ graph TD
         C --> E;
         E --> F;
         F --> G;
+
+        A ==> B ==> C ==> D ==> E ==> F;
     end
 
     subgraph #project-topic-x
