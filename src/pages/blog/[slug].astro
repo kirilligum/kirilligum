@@ -51,6 +51,11 @@ const { Content } = await post.render();
             article {
                 padding: 1rem;
             }
+            article :global(img) {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
             :global(.comparison-table table tr:nth-child(even)) {
                 background-color: rgba(128, 128, 128, 0.07);
             }
