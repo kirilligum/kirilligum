@@ -181,4 +181,4 @@ Usability wins.
 
 When the goal is to force the separation of conversations into discrete components. It's analogous to developers creating a component architecture in software—a deliberate, high-effort task for future clarity.
 
-But that isn't communication. It's building a knowledge base.
+But it's building a knowledge base rather than free-form communication.
