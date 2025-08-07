@@ -25,7 +25,7 @@ const { Content } = await post.render();
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Blog post page" />
+		<meta name="description" content={post.data.description} />
 		<title>{post.data.title}</title>
         <style>
 			body {
