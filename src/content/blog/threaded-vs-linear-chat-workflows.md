@@ -32,7 +32,7 @@ The market data is unequivocal: the Quote-Reply model is the globally dominant s
 
 | Point        | Quote-Reply Model (e.g., Discord)                                                               | To-Parent Model (e.g., Slack)                                                                 |
 | :----------- | :---------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------- |
-| **Primary Goal** | **Communication.** Facilitate fast, intuitive, human-like dialogue.              | **Structuring.** Force creation of a structured, machine-readable knowledge base. |
+| **Primary Goal** | **Communication.** Facilitate fast, intuitive, human-like dialogue.              | **Structuring.** Force creation of a structured knowledge base that is easier to follow if a consistent style is used. |
 | **Optimizes For** | **Writer's Speed.** Low friction to contribute. Encourages fast, reactive dialogue. | **Future Reader's Retrieval.** Enforces upfront organization.                     |
 | **Cognitive Load** | Low for the writer. High for readers, who must mentally parse interleaved conversations. | **High and continuous for the writer,** who must categorize every message.        |
 | **Core Use Case** | Brainstorming, decision-making, social chat—all forms of dialogue.              | Asynchronous status updates, Q&A, and task-specific documentation.                 |
