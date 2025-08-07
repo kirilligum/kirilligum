@@ -38,7 +38,7 @@ const { Content } = await post.render();
 			header p {
 				margin: 0.5rem 0 0;
 			}
-			h1, h2, h3 {
+			h1, h2 {
 				font-family: monospace;
 				font-weight: bold;
 				line-height: 1.1;
@@ -48,6 +48,12 @@ const { Content } = await post.render();
 				display: inline-block;
 				box-shadow: 6px 6px 0px #222;
 				background-color: #f0f0f0;
+			}
+			h3, h4, h5, h6 {
+				font-family: monospace;
+				font-weight: bold;
+				line-height: 1.1;
+				margin-bottom: 0.5rem;
 			}
 			section {
 				margin-bottom: 2rem;
@@ -73,13 +79,14 @@ const { Content } = await post.render();
 	</head>
 	<body>
 		<header>
-			<h1>Kirill Igumenshchev's Blog</h1>
+			<h1>Blog</h1>
 			<p><a href="/">Back to Home</a></p>
 		</header>
 		<section>
             <article>
                 <h2>{post.data.title}</h2>
                 <p style="font-size: 0.8em; color: #777;">
+                    Author: Kirill Igumenshchev<br/>
                     Published: {post.data.date.toLocaleDateString()}
                     {post.data.updatedDate && ` | Updated: ${post.data.updatedDate.toLocaleDateString()}`}
                 </p>
