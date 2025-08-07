@@ -97,4 +97,4 @@ These tips map common Discord power features to their Slack equivalents.
 
 ---
 
-For a deeper dive into the design principles, market trends, and academic research behind these different chat architectures, see the companion post: [The Communication Lifecycle: From Free-form Chat to Structured Threads](/blog/threaded-vs-linear-chat-workflows).
+For a deeper dive into the design principles, market trends, and academic research behind these different chat architectures, see the companion post: [Analysis: Why Quote-Reply is a Superior Professional Communication Flow](/blog/threaded-vs-linear-chat-workflows).
