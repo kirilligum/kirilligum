@@ -128,7 +128,7 @@ The overwhelming market dominance of the Quote-Reply model suggests that for the
 ---
 For a practical guide on how to apply these concepts when moving from Discord to Slack, see the companion post: [A Discord User's Guide to Mastering Slack](/blog/migrating-from-discord-to-slack).
 
-### Twitter (X.com) Thread
+### Microblogging
 
 **Main Tweet**
 
